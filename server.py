@@ -1,9 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
+def func():
     return render_template('./index.html')
+
+@app.route('/<varx>/<int:id>')
+def hello_world(varx=None, id=None):
+    return render_template('./index.html', varx=varx, id=id)
 
 
 @app.route('/contact')
