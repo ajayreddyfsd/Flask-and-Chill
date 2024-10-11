@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Beautiful Webpage</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f4f4f9;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Style for the header */
+    header {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    /* Main content section */
+    .container {
+      flex: 1;
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      color: #4CAF50;
+      margin-bottom: 20px;
+    }
+
+    .container p {
+      margin-bottom: 20px;
+    }
+
+    /* Button style */
+    .btn {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer style */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    footer p {
+      font-size: 0.9em;
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .container {
+        margin: 10px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header section -->
+  <header>
+    <h1>Welcome to My Webpage</h1>
+    <p>A simple and beautiful HTML page with embedded CSS</p>
+  </header>
+
+  <!-- Main content section -->
+  <div class="container">
+    <h2>About This Page</h2>
+    <p>This webpage is designed to be both visually appealing and minimalistic. It includes a header, a content section, and a footer, all styled with CSS within the same file for ease of use.</p>
+    <p>The color scheme is soft, and the layout is responsive to ensure a great experience on both desktop and mobile devices.</p>
+    <a href="#" class="btn">Learn More</a>
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2024 Simple Beautiful Webpage</p>
+  </footer>
+
+</body>
+</html>
