@@ -5,6 +5,9 @@ app = Flask(__name__)
 def func():
     return render_template('./index.html')
 
+
+# route parameters
+# extracts the params from URL and displays accordingly
 @app.route('/<varx>/<int:id>')
 def hello_world(varx=None, id=None):
     return render_template('./index.html', varx=varx, id=id)
