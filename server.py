@@ -7,7 +7,9 @@ def func():
 
 
 # route parameters
-# extracts the params from URL and displays accordingly
+# extracts the params from URL
+# can use them in code 
+# or display webpage or api results accordingly
 @app.route('/<varx>/<int:id>')
 def hello_world(varx=None, id=None):
     return render_template('./index.html', varx=varx, id=id)
